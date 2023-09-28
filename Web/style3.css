@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(230, 224, 224);
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    top: 5%;
+    height: 35vh;
+    width: 70vw;
+    margin: 0% 15%;
+    border-radius: 4px;
+    /* background: url(/imagens/5.1.jpeg);
+    background-size: cover;
+    Se quiser poupar linhas de codigo ao colocar imagem na div*/
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    position: relative;
+    margin-top: 45vh;
+    height: 50vh;
+    width: 70vw;
+    margin-right: 15%;
+    margin-left: 15%;
+    /* background-color: red; */
+}
+
+.left{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    background-color: whitesmoke;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 2px 0px 9px;
+}
+
+.left p{
+    padding: 2% 5%;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    pointer-events: none;
+}
+
+.right{
+    position: absolute;
+    left: 55%;
+    height: 100%;
+    width: 45%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: -2px 0px 9px;
+}
+
+.right p{
+    padding: 2% 5%;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    pointer-events: none;
+}
+
+span{
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.pr{
+    font-size: 1.6vw;
+}
+
+@media only screen and (max-width: 490px) and (orientation: portrait){
+    body{
+        overflow-y: scroll;
+        height: 110vh;
+    }
+
+    .header{
+        position: static;
+        margin-top: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 20vh;
+        width: 90vw;
+    }
+
+    .container{
+        position: relative;
+        margin-top: 5vh;
+        height: 100vh;
+        width: 90vw;
+        margin-right: 5%;
+        margin-left: 5%;
+        /* background-color: red; */
+    }
+
+    .left{
+        position: absolute;
+        height: 45%;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+    .left p{
+        font-size: 3.7vw;
+    }
+
+    .right{
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        height: 45%;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+    .right p{
+        font-size: 3.7vw;
+    }
+
+    .pr{
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 489px) and (max-width: 845px) and (orientation: portrait) {
+    .header{
+        width: 90vw;
+        margin: 0% 5%;
+    }
+
+    .container{
+        height: 50vh;
+        width: 90vw;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    .left{
+        height: 95%;
+        width: 48%;
+    }
+    
+    .left p{
+        font-size: 1.9vw;
+    }
+    
+    .right{
+        left: 50%;
+        height: 95%;
+        width: 50%;
+    }
+    
+    .right p{
+        font-size: 1.9vw;
+    }
+    
+    .pr{
+        font-size: 3vw;
+    }
+}

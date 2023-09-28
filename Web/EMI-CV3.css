@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul{
+    position: fixed;
+    list-style: none;
+    display: block;
+    /* align-items: center;
+    justify-content: center;
+    so funciona com o display: flex;*/
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(230, 224, 224);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 2px 4px black;
+}
+
+nav ul a{
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.1vw;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: default;
+    transition: .95s ease-out;
+}
+
+nav ul a:hover{
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+
+section {
+    height: 100vh;
+    padding-top: 22vh;
+}
+
+main ul li a{
+    color: black;
+    transition: .65s ease-in-out;
+}
+
+main div{
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -1.2px 3.2px black;
+    /* background: url(/imagens/5.1.jpeg);
+    background-size: cover; */
+}
+
+main div ul{
+    padding: 1.9vw;
+    list-style: none;
+}
+
+main div ul li{
+    margin-top: 10px;
+    font-size: 1.4vw;
+    transition: .65s ease-in-out;
+}
+
+main div ul li a{
+    text-decoration: none;
+}
+
+span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    padding-bottom: 1%;
+    pointer-events: none;
+}
+
+#Modulo1{
+    background-color: rgb(248, 81, 3);
+}
+#Modulo2{
+    background-color: rgb(248, 81, 3);
+}
+#Modulo3{
+    background-color: rgb(248, 81, 3);
+}
+#Modulo4{
+    background-color: rgb(248, 81, 3);
+}
+/* #Modulo5{
+    background-color: rgb(248, 81, 3);
+}
+#Modulo6{
+    background-color: rgb(248, 81, 3);
+}
+#Modulo7{
+    background-color: rgb(248, 81, 3);
+}
+#Modulo8{
+    background-color: rgb(248, 81, 3);
+} */
+
+
+@media only screen and (max-width: 490px) and (orientation: portrait) {
+    nav ul{
+        /* height: 35vh; */
+        height: 22vh;
+    }
+    nav ul a{
+        font-size: 2.9vw;
+        margin: 3.5px;
+        padding: 5px 8px;
+    }
+    section {
+        height: 100vh;
+        /* padding-top: 37vh; */
+        padding-top: 24vh;
+    }
+    main div ul li{
+        font-size: 3.5vw;
+    }
+    span{
+        font-size: 3.8vw;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-height: 420px) and (orientation: landscape) {
+    nav ul{
+        /* height: 45vh; */
+        height: 25vh;
+    }
+    nav ul a{
+        font-size: 1.5vw;
+        margin: 4px;
+        padding: 5px 8px;
+    }
+    section {
+        height: 100vh;
+        /* padding-top: 47vh; */
+        padding-top: 27vh;
+    }
+    main div ul li{
+        font-size: 1.65vw;
+    }
+    span{
+        font-size: 2vw;
+    }
+
+}
